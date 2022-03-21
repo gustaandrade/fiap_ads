@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>idwall backoffice</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 navbar-idwall">
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 sticky-top"
+          >
+            <a
+              href="/"
+              class="d-flex flex-column align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <img
+                class="fs-5 d-none d-sm-inline logo"
+                alt="idwall"
+                src="img/idwall_logo.png"
+              />
+
+              <span class="fs-5 d-none d-sm-inline fs-6 fw-light text-white"
+                >backoffice</span
+              >
+            </a>
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-archive text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >protocolos</span
+                  >
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-file-earmark-text text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >documentos</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-people text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >usuários</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-building text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >fontes</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-shop text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >matrizes</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-file-ruled text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >regras</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-code text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >atributos</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-clipboard-data text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >monitor</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-diagram-2 text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >organizações</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <hr />
+            <div class="dropdown pb-4">
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://i.pravatar.cc/300"
+                  alt="avatar"
+                  width="30"
+                  height="30"
+                  class="rounded-circle"
+                />
+                <span class="d-none d-sm-inline mx-1">user</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" href="#">configurações</a></li>
+                <li><a class="dropdown-item" href="#">perfil</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">sair</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col py-3">
+          <div class="d-flex align-items-center">
+            <i class="fs-4 bi-clipboard-data px-3"></i>
+            <h1 class="fs-2">Monitor</h1>
+          </div>
+
+          <hr class="col-12 pb-1 hr-idwall" />
+
+          <div class="row p-3">
+            <h2 class="fs-4 my-3">Status</h2>
+
+            <div class="progress p-0 mb-1">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                90%
+              </div>
+              <div
+                class="progress-bar bg-danger"
+                role="progressbar"
+                style="width: 10%"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                10%
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-center mb-3"
+            >
+              <div class="d-flex flex-row align-items-center my-1 px-2">
+                <span class="bg-success me-2 status-dot"></span>
+                <span class="fw-light fs-6">online</span>
+              </div>
+
+              <div class="d-flex flex-row align-items-center my-1 px-2">
+                <span class="bg-danger me-2 status-dot"></span>
+                <span class="fw-light fs-6">offline</span>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row row-cols-lg-2 row-cols-xxl-4">
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  AntecedentesCE
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  AntecedentesDF
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  AntecedentesMT
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  AntecedentesRO
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  AntecedentesTO
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  CADICON
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  InfracoesDetranCE
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  InfracoesDetranPI
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  InfracoesDetranSE
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  InfracoesPrefeituraSP
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-danger me-2 status-dot"></span>
+                  InfracoesRS
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  JuntaComercialDF
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  MultasPoliciaRodoviariaFederal
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-danger me-2 status-dot"></span>
+                  NovoAntecedentesMT
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  RestituicaoReceitaFederal
+                  <span class="badge rounded-pill bg-dark ms-3">V2</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  SIAFI
+                  <span class="badge rounded-pill bg-dark ms-3">V3</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-danger me-2 status-dot"></span>
+                  SSDMEC
+                  <span class="badge rounded-pill bg-dark ms-3">V3</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  VeiculoDetranSP
+                  <span class="badge rounded-pill bg-dark ms-3">V3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-3">
+            <h2 class="fs-4 my-3">Protocolos</h2>
+
+            <div class="progress p-0 mb-1">
+              <div
+                class="progress-bar bg-secondary"
+                role="progressbar"
+                style="width: 8%"
+                aria-valuenow="8"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                8%
+              </div>
+              <div
+                class="progress-bar bg-primary"
+                role="progressbar"
+                style="width: 18%"
+                aria-valuenow="18"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                18%
+              </div>
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 74%"
+                aria-valuenow="74"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                74%
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-center mb-3"
+            >
+              <div class="d-flex flex-row align-items-center my-1 px-2">
+                <span class="bg-secondary me-2 status-dot"></span>
+                <span class="fw-light fs-6">não processados</span>
+              </div>
+
+              <div class="d-flex flex-row align-items-center my-1 px-2">
+                <span class="bg-primary me-2 status-dot"></span>
+                <span class="fw-light fs-6">processando</span>
+              </div>
+
+              <div class="d-flex flex-row align-items-center my-1 px-2">
+                <span class="bg-success me-2 status-dot"></span>
+                <span class="fw-light fs-6">concluídos</span>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row row-cols-lg-2 row-cols-xxl-4">
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-success me-2 status-dot"></span>
+                  <a href="/">cataoaraujo</a>
+                  <span class="badge rounded-pill bg-dark ms-3">81553</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-primary me-2 status-dot"></span>
+                  <a href="/">mitm</a>
+                  <span class="badge rounded-pill bg-dark ms-3">24113</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-primary me-2 status-dot"></span>
+                  <a href="/">pcrtestes</a>
+                  <span class="badge rounded-pill bg-dark ms-3">8106</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-secondary me-2 status-dot"></span>
+                  <a href="/">hieor</a>
+                  <span class="badge rounded-pill bg-dark ms-3">4235</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-secondary me-2 status-dot"></span>
+                  <a href="/">cia.automation</a>
+                  <span class="badge rounded-pill bg-dark ms-3">499</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-secondary me-2 status-dot"></span>
+                  <a href="/">sereio</a>
+                  <span class="badge rounded-pill bg-dark ms-3">386</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-secondary me-2 status-dot"></span>
+                  <a href="/">qa.automation</a>
+                  <span class="badge rounded-pill bg-dark ms-3">279</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <span class="bg-secondary me-2 status-dot"></span>
+                  <a href="/">foxtron</a>
+                  <span class="badge rounded-pill bg-dark ms-3">202</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-3">
+            <h2 class="fs-4 my-3">Consultas em análise</h2>
+
+            <div class="container">
+              <div class="row row-cols-lg-2 row-cols-xxl-4">
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">ProcessosTJSE</a>
+                  <span class="badge rounded-pill bg-dark ms-3">1137</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">AntecedentesTRF4</a>
+                  <span class="badge rounded-pill bg-dark ms-3">884</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">AntecedentesTRF3</a>
+                  <span class="badge rounded-pill bg-dark ms-3">603</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">AntecedentesTRF2</a>
+                  <span class="badge rounded-pill bg-dark ms-3">418</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">ProcessosTJSP</a>
+                  <span class="badge rounded-pill bg-dark ms-3">371</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">ProcessosTJRO</a>
+                  <span class="badge rounded-pill bg-dark ms-3">250</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">SINESP</a>
+                  <span class="badge rounded-pill bg-dark ms-3">224</span>
+                </div>
+
+                <div class="d-flex flex-row align-items-center my-1">
+                  <a href="/">BloqueioPF</a>
+                  <span class="badge rounded-pill bg-dark ms-3">211</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

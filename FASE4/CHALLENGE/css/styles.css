@@ -1,0 +1,30 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', monospace;
+
+  height: 100%;
+}
+
+.logo {
+  width: 125px;
+  filter: invert(1);
+}
+
+.navbar-idwall {
+  background-color: #6b31ff;
+}
+
+.hr-idwall {
+  background-color: #6b31ff;
+}
+
+.status-dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: block;
+}
