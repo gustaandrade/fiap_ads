@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>idwall backoffice - relatórios</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 navbar-idwall">
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 sticky-top"
+          >
+            <a
+              href="/"
+              class="d-flex flex-column align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <img
+                class="fs-5 d-none d-sm-inline logo"
+                alt="idwall"
+                src="img/idwall_logo.png"
+              />
+
+              <span class="fs-5 d-none d-sm-inline fs-6 fw-light text-white"
+                >backoffice</span
+              >
+            </a>
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-archive text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >protocolos</span
+                  >
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-file-earmark-text text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >documentos</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-people text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >usuários</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-building text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >fontes</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-shop text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >matrizes</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-file-ruled text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >regras</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-code text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >atributos</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-clipboard-data text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >monitor</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-diagram-2 text-white"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >organizações</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <hr />
+            <div class="dropdown pb-4">
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://i.pravatar.cc/300"
+                  alt="avatar"
+                  width="30"
+                  height="30"
+                  class="rounded-circle"
+                />
+                <span class="d-none d-sm-inline ms-3 me-2">user</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" href="#">configurações</a></li>
+                <li><a class="dropdown-item" href="#">perfil</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">sair</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col py-3">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <i class="fs-4 bi-clipboard-data px-3"></i>
+              <h1 class="fs-2">Relatórios</h1>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-primary">
+                <i class="fs-6 bi-file-earmark-plus pe-2"></i>
+                novo relatório
+              </button>
+            </div>
+          </div>
+
+          <hr class="col-12 pb-1 hr-idwall" />
+
+          <div class="row p-3">
+            <h2 class="fs-4 my-3">Filtros</h2>
+
+            <div class="input-group gap-3">
+              <div class="form-floating">
+                <input
+                  id="relDate"
+                  type="date"
+                  class="form-control"
+                  placeholder="Data"
+                  aria-label="Data`"
+                  aria-describedby="addon-wrapping"
+                />
+                <label for="relDate">Data</label>
+              </div>
+
+              <div class="form-floating">
+                <input
+                  id="relId"
+                  type="text"
+                  class="form-control"
+                  placeholder="CPF/CNPJ"
+                  aria-label="CPF/CNPJ"
+                  aria-describedby="addon-wrapping"
+                />
+                <label for="relId">CPF/CNPJ</label>
+              </div>
+
+              <select class="form-select form-select-sm" aria-label="Situação">
+                <option selected disabled>Situação</option>
+                <option value="1">Processando</option>
+                <option value="2">Para revisar</option>
+                <option value="3">OK</option>
+              </select>
+
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-filter"
+              >
+                Filtrar
+              </button>
+            </div>
+          </div>
+
+          <hr class="col-12" />
+
+          <div class="row p-3">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">cpf/cnpj</th>
+                    <th scope="col">nome</th>
+                    <th scope="col">situação</th>
+                    <th scope="col">última atualização</th>
+                    <th scope="col">núm. relatórios</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">999.999.999-99</th>
+                    <td>nome teste 1</td>
+                    <td>
+                      <span class="badge rounded-pill bg-dark ms-3">OK</span>
+                    </td>
+                    <td>99/99/9999 99:99</td>
+                    <td>3</td>
+                    <td><a href="#">ver resultado</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">999.999.999-99</th>
+                    <td>nome teste 2</td>
+                    <td>
+                      <span class="badge rounded-pill bg-dark ms-3">OK</span>
+                    </td>
+                    <td>99/99/9999 99:99</td>
+                    <td>3</td>
+                    <td><a href="#">ver resultado</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">999.999.999-99</th>
+                    <td>nome teste 3</td>
+                    <td>
+                      <span class="badge rounded-pill bg-dark ms-3">OK</span>
+                    </td>
+                    <td>99/99/9999 99:99</td>
+                    <td>3</td>
+                    <td><a href="#">ver resultado</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
